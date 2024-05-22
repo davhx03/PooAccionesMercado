@@ -7,7 +7,10 @@ public class Main {
         AdapterXMLtoJSon appleJSON= new AdapterXMLtoJSon(apple);;
         appleJSON.showJSonAction();
 
-        ActionJSon google = new ActionJSon("123","Google Inc.",210,"USD");
-        google.showJSonAction();
+        ActionXML google= new ActionXML("456","Google Co.",260,"USD");
+        google.showXMLAction();
+
+        AdapterXMLtoJSon googleJSon = new AdapterXMLtoJSon(google);
+        googleJSon.showJSonAction();
     }
 }
